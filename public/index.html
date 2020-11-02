@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+    <meta name="description" content="No description - No info! Really!">
+    <meta name="keywords" content="audio, wars, space, max, qnei, maxqnei, all for all">
+    <title>AudioWars.Space</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- <script type="text/javascript" src="assets/js/socket.io.js"></script> -->
+
+    <script type="text/javascript" src="/js/prototypes/HTMLElement.class.js"></script>
+    <script type="text/javascript" src="/js/prototypes/HTMLElement.remove.js"></script>
+    <script type="text/javascript" src="/js/assets/texts.js"></script>
+    <script type="text/javascript" src="/js/index.js"></script>
+
+    <script type="text/javascript">
+      'use strict';
+
+      (function() {
+        const D = new Date;
+        const Email = ([
+          'MaxRad',
+          D.getFullYear(),
+          (D.getMonth()+1).toString().padStart(2,'0'),
+          D.getDate().toString().padStart(2,'0'),
+          D.getHours().toString().padStart(2,'0'),
+          D.getMinutes().toString().padStart(2,'0'),
+          D.getSeconds().toString().padStart(2,'0'),
+          '@m.tv'
+        ]).join('');
+        console.debug(Email);
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div class="root">
+      <div class="main-background"></div>
+
+      <div class="language">
+        <button type="button" data-lang="en">English</button>
+        <button type="button" data-lang="ru">Русский</button>
+        <!-- <button type="button" data-lang="ua">Українська</button> -->
+      </div>
+
+      <div class="slide-list">
+
+        <div id="Intro" class="slide-item">
+          <slide-name>
+            <text key="Intro[1]"></text>
+          </slide-name>
+
+          <div class="slide-content text-center fx-show">
+            <div class="text-large fx-show" fx-show-up>
+              <small>
+                <text key="Welcome[0]"></text>
+              </small>
+
+              <small class="fx-show" fx-show-up>
+                <text key="Welcome[1]"></text>
+              </small>
+                <br>
+              <span class="fx-show" fx-show-up="2">
+                <text key="Welcome[2]"></text>
+              </span>
+            </div>
+
+            <div class="text-large mar-top-5 fx-show" fx-show-up>
+              <span>
+                <small class="fx-show">
+                  <text key="ProjectAndPortfolio[0]"></text>
+                </small>
+
+                <small class="fx-show" fx-show-up>&</small>
+
+                <small class="fx-show" fx-show-up>
+                  <text key="ProjectAndPortfolio[1]"></text>
+                </small>
+                  <br>
+                <span class="fx-show" fx-show-up="2">
+                  <button type="button" goto-slide="About">
+                    <text key="ProjectAndPortfolio[2]"></text>
+                  </button>
+                </span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div id="About" class="slide-item">
+          <slide-name>
+            <text key="About[1]"></text>
+          </slide-name>
+
+          <div class="slide-content">
+            <div class="text-large fx-show">
+              <text key="About[1]"></text>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="slide-content">
+            <div class="text-large fx-show">
+              CurrentProjects: {}
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="slide-content">
+            <div class="site-title">Slide 4</div>
+          </div>
+        </div>
+
+        <div class="slide-item">
+          <div class="slide-content">
+            <div class="site-title">Slide 5</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slide-indicator-list">
+        <div class="slide-indicator-item template">
+          <div class="title"></div>
+          <div class="point"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

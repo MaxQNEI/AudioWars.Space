@@ -1,0 +1,708 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tit",
+				"TitleStyle\talias"
+			],
+			[
+				"Title",
+				"TitleStyle"
+			],
+			[
+				"sty",
+				"styleUaMobile\twarning"
+			],
+			[
+				"style",
+				"styleUaMobile"
+			],
+			[
+				"my",
+				"my_id\twarning"
+			],
+			[
+				"s",
+				"styleUaMobile\twarning"
+			],
+			[
+				"sh",
+				"shrinkByPageType\tconst"
+			],
+			[
+				"page",
+				"pageType\twarning"
+			],
+			[
+				"sess",
+				"session-clear"
+			],
+			[
+				"Reco",
+				"RecordList"
+			],
+			[
+				"st",
+				"sticky\tposition"
+			],
+			[
+				"remov",
+				"removeChild"
+			],
+			[
+				"com",
+				"command\tparameter"
+			],
+			[
+				"auto",
+				"autofocus\tAttr"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"box",
+				"box-shadow\tproperty"
+			],
+			[
+				"background-c",
+				"background-color\tproperty"
+			],
+			[
+				"Re",
+				"RecordList"
+			],
+			[
+				"new",
+				"newRecord"
+			],
+			[
+				"instan",
+				"instanceof"
+			],
+			[
+				"Comm",
+				"CommandList"
+			],
+			[
+				"fie",
+				"fieldName"
+			],
+			[
+				"id_",
+				"id_user\twarning"
+			],
+			[
+				"pass",
+				"password2\tproperty"
+			],
+			[
+				"password",
+				"password2"
+			],
+			[
+				"user",
+				"user_surname"
+			],
+			[
+				"user_",
+				"user_name"
+			],
+			[
+				"form",
+				"formData\tproperty"
+			],
+			[
+				"passwor",
+				"password2"
+			],
+			[
+				"menuc",
+				"menu-current-link"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"cla",
+				"className\tproperty"
+			],
+			[
+				"mar",
+				"marginBottom"
+			],
+			[
+				"prp",
+				"props"
+			],
+			[
+				"defa",
+				"defaultValue\twarning"
+			],
+			[
+				"setTi",
+				"setTimeEnd\tconst"
+			],
+			[
+				"background",
+				"backgroundColor"
+			],
+			[
+				"marg",
+				"marginBottom"
+			],
+			[
+				"flex",
+				"flexDirection"
+			],
+			[
+				"Inde",
+				"IndentNonMQ\tconst"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"margin",
+				"marginLeft"
+			],
+			[
+				"impo",
+				"important"
+			],
+			[
+				"header-menu",
+				"header-menu-link"
+			],
+			[
+				"msg",
+				"MsgList"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"par",
+				"parse_value"
+			],
+			[
+				"fo",
+				"foreach\tforeach …"
+			],
+			[
+				"over",
+				"overflowY\twarning"
+			],
+			[
+				"Template",
+				"TemplatesByFigma"
+			],
+			[
+				"bu",
+				"buildPageTest\tproperty"
+			],
+			[
+				"con",
+				"constructor_elements\tdirectory"
+			],
+			[
+				"pag",
+				"pageBuilder\tscript"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"prett",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"renam",
+				"Rename File"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"pretty json",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"mini",
+				"Pretty JSON: Minify (compress) JSON"
+			],
+			[
+				"prett\t",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"theme",
+				"UI: Select Color Scheme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 137.0,
+		"history":
+		[
+			"ls",
+			"ll"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/home/maxqnei/Projects/audiowars.space/www/public/css/index.css",
+		"/home/maxqnei/Projects/audiowars.space/www/public/css/bootstrap.css",
+		"/home/maxqnei/Projects/audiowars.space/www/public/css/layout.css",
+		"/home/maxqnei/Projects/audiowars.space/www/public/index.html",
+		"/home/maxqnei/index.html",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/helpers/menu/setShowMenuLink.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/sftp-config.json",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/constant/constructor_elements_style.js",
+		"/tmp/sublime-sftp-browse-1604068010/mapped/var/www/001.ep.mytv.blog/MyTvBlog/package.json",
+		"/tmp/sublime-sftp-browse-1604068233/mapped/var/www/001.ep.mytv.blog/MyTvBlog/webpack.config.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/webpack.config.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/package.json",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Slider.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/constant/template_json_list.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/server/actions/image-upload.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/wrapper/construcorElementAction/SliderWrapper.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/AdditionalPages.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/overlay/OverlaySettingsSEO.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/Landing.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Banner.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Video.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/TVProgramItem.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/TVProgramDay.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Title.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Text.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Subscribe.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Subheader.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Menu.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/CatFish.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Image.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/ImgImpression.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Lead.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/SpecialProjects.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/LandingEdit.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Programs.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/OnlineBroadcasting.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/News.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/account/Account.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/administrate/AdministrateSite.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/reducers/constructor.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/sagas/watchUpdateSiteData.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/wrapper/construcorElementAction/ImageWrapper.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/wrapper/PropsReader.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/helpers/pageBuilder.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/wrapper/construcorElementAction/LeadWrapper.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/constant/constructor_elements.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/header/Header.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/Account.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/sagas/generators.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/services/api.local.example.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/services/api.local.js",
+		"/tmp/sublime-sftp-browse-1604010687/mapped/var/www/mytv.blog/src/shared/services/api.local.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/Cabinet.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/constant/Header.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/footer/Footer.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/dashboard/Dashboard.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/menu/Menu.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/_CoursePreview.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/_CreateCourse.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/_Dashboard.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/_DashboardEdit.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/_Grid.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/_Home.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/dashboard/BroadcastDashboard.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/dashboard/MainDashboard.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/dashboard/NewsDashboard.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/dashboard/ProgramDashboard.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/dashboard/ProjectDashboard.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/dashboard/TVProgramDashboard.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/List.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/administrate/CustomTextField.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/administrate/Userlist.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/Footer.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/sagas/watchSendAccountFormData.js",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/components/constructor_elements/Menu.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/components/constructor_elements/Programs.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/components/constructor_elements/News.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/components/constructor_elements/SpecialProjects.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/styles/styles.js",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/styles/styles.js",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/containers/Landing.js",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/components/grid/GridItem.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/routes/routes.js",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/reducers/constructor.js",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/components/header/Header.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/components/menu/Menu.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/constant/constructor_elements_style.js",
+		"/home/maxqnei/Projects/copyleft.net.ua/js/controllers/Archive.js",
+		"/home/maxqnei/Projects/copyleft.net.ua/js/controllers/SVGController.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/helpers/userFields/tests.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/helpers/userFields/index.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/actions/account.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/administrate/AdministrateUsers.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/administrate/AdministrateNewsletter.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/administrate/AdministrateDesign.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/containers/administrate/AdministrateAdvertising.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/containers/dashboard/ProgramDashboard.jsx",
+		"/home/maxqnei/Projects/LibraryJS/InputHistory/InputHistoryController.js",
+		"/home/maxqnei/Projects/LibraryJS/InputHistory/index.html",
+		"/home/maxqnei/Projects/MyTV.blog/admin/git.log",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/components/constructor_elements/TVProgramItem.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements/custom_mui/TimeBetween.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/public/src/shared/components/constructor_elements/custom_mui/TimeBetween.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/reducers/selectors.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/constant/roles.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/REFERENCE.md",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/subMenu/SubMenu.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/helpers/userFields/format.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/subMenu/settings.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/sagas/watchCheckAuthorizationToken.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/routes/routes.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/sagas/helpers.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/sagas/watchLoadProgramListForChannel.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/sagas/watchLoadReleaseListForProgram.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/helpers/userFields/settings.js",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/overlay/OverlayPageTemplateSelect.js",
+		"/etc/hosts",
+		"/home/maxqnei/Projects/MyTV.blog/admin/IMPORT-SIZES.log",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/wrapper/construcorElementAction/TVProgramItemWrapper.jsx",
+		"/home/maxqnei/Downloads/Telegram Desktop/Robochick-master/system/Routes.php",
+		"/home/maxqnei/Downloads/Telegram Desktop/robochick/system/models/api/unixtime.php",
+		"/home/maxqnei/Downloads/Telegram Desktop/_stairs/system/models/api/unixtime.php",
+		"/home/maxqnei/Downloads/Telegram Desktop/Robochick-master/system/classes/Vkontakte.php",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/wrapper/construcorElementAction/TitleWrapper.jsx",
+		"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/sagas/watchLoadJsonMenu.js",
+		"/tmp/sublime-sftp-browse-1603706356/mapped/var/www/mytv.blog/src/shared/components/constructor_elements/Programs.jsx",
+		"/tmp/sublime-sftp-browse-1603706420/mapped/var/www/mytv.blog/src/shared/components/grid/GridItem.jsx",
+		"/tmp/sublime-sftp-browse-1603715318/mapped/var/www/mytv.blog/src/shared/containers/LandingEdit.js"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 99.0,
+		"where_history":
+		[
+			"/home/maxqnei/Projects/MyTV.blog/admin/src/shared/components/constructor_elements",
+			"/home/maxqnei/Projects/MyTV.blog/admin/src",
+			"/home/maxqnei/Downloads/Telegram Desktop/Robochick-master",
+			"/home/maxqnei/Projects/uamobile.ownrtb",
+			"/home/maxqnei/Projects/MyTV.blog/admin/src",
+			"/home/maxqnei/Projects/MyTV.blog/public/src/shared"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"1fr",
+			"OnlineBroadcastingStyles",
+			"Style",
+			"styles",
+			"CatFishStyles}",
+			"CatFishStyles }",
+			"CatFishStyles",
+			"VideoStyles",
+			"BannerStyles",
+			"Styles",
+			"Styles =",
+			"ImageStyles",
+			"connect",
+			"Button",
+			"findElement",
+			"isObject",
+			"ImageContent",
+			"CONSTRUCTOR_ELEMENTS",
+			"TextField",
+			"ImageStyles",
+			"BannerStyles",
+			"TitleStyle",
+			"BannerStyles",
+			"props.styleUaMobile",
+			"style",
+			"props.styleUaMobile",
+			"SET_ELEMENT_MENU_LINK",
+			"mytv.blog:3000",
+			"LoadAccountData",
+			"get-data-personal-area",
+			".props.location.pathname",
+			"\"",
+			"import { withRouter } from 'react-router-dom';",
+			"MenuComponent",
+			"AccountCircleOutlined",
+			"Button",
+			"Switch",
+			"switch",
+			"Switch",
+			"Typography",
+			"DashboardStatisticsByPageType",
+			"requestStatistics",
+			"Typography",
+			"Link",
+			"Box",
+			"addStyle",
+			"Typography",
+			"makeStyles",
+			"React",
+			"LinkIcon",
+			"TextField",
+			"Button",
+			"button",
+			"Button",
+			"FormControl",
+			"useState",
+			"AddToPhotosOutlinedIcon",
+			"DeleteOutline",
+			"addStyle",
+			"useState",
+			"sendApiJsonRequest",
+			"Grid",
+			"Url",
+			"useState",
+			"Script",
+			"addStyle",
+			"BannerStyles",
+			"Typography",
+			"format",
+			"Typography",
+			"Roles",
+			"sendApiJsonRequest",
+			"onfieldupdate",
+			"onFieldUpdate",
+			"onfieldupdate",
+			"format",
+			"Typography",
+			"PreviewTextField",
+			"BaseTextField",
+			"ContentBox",
+			"FormPhoneField",
+			"FormTextField",
+			"FormBase",
+			"roles",
+			"setAccountAuthData",
+			"\"to\": ",
+			"SET_ELEMENT_MENU_LINK",
+			"pathname",
+			"\"",
+			" \"children\": ",
+			"Link",
+			"link",
+			"/administrate/users",
+			"pageType",
+			"menuType",
+			"null, null, ",
+			"localStorage",
+			"history",
+			"time",
+			"else",
+			"RecordItemString",
+			"innerText",
+			"RecordItem",
+			"cmd",
+			"ResetPointer",
+			"ResetPoiter",
+			"Get",
+			"AddHistory",
+			"<div>",
+			"</div>",
+			"div",
+			"document",
+			"command-input",
+			"event.target.value",
+			"div",
+			"time",
+			"min",
+			"this.value",
+			"className",
+			"CommandInput",
+			"InputHistoryController",
+			"</div>",
+			"CommandHistoryController",
+			"CommandList",
+			"command",
+			"Command",
+			"CommandList",
+			"CommandInput"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"import withRouter from 'react-router-dom/withRouter';"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 103.0
+	},
+	"pinned_build_system": "",
+	"project": "audiowars.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 837.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 294.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

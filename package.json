@@ -1,0 +1,24 @@
+{
+  "name": "audiowars.space",
+  "version": "0.0.1",
+  "description": "audiowars.space by maxqnei",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxQNEI/AudioWars.Space.git"
+  },
+  "keywords": [
+    "audiowars",
+    "space",
+    "maxqnei"
+  ],
+  "author": "MaxQNEI <maxqnei@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxQNEI/AudioWars.Space/issues"
+  },
+  "homepage": "https://github.com/MaxQNEI/AudioWars.Space#readme"
+}
