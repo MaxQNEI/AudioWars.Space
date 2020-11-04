@@ -22,6 +22,8 @@ function IndexController(Params) {
   // Properties ------------------------------------------------------------- //
   var Language = 'en'; // en - default
 
+  var ThreeController;
+
   // Instance --------------------------------------------------------------- //
   function Instance() {
     return Instance;
@@ -29,15 +31,33 @@ function IndexController(Params) {
 
   // Consructor ------------------------------------------------------------- //
   return (function() {
+    UpdInstance();
     InitLanguageController();
     InitSlideController();
+    InitThreeController();
+
+    var event = new Event('index-controller');
+    event.Controller = Instance;
+    window.dispatchEvent(event);
 
     return Instance;
   })();
 
   // Methods ---------------------------------------------------------------- //
-  function InitLanguageController() {
+  function UpdInstance() {
+    Object.defineProperties(Instance, {
+      DOMRoot: { enumerable: true, value: DOMRoot },
+    });
+
+    return this;
+  }
+
+
+  function InitLanguageController() { /* FOLD */
+
     var DOMButtonLanguageList = document.querySelectorAll('.language button');
+    if(!DOMButtonLanguageList || !DOMButtonLanguageList.length) { return; }
+
     var LanguageList = Object.keys(window.Texts);
 
     var ButtonByLanguage = {};
@@ -86,17 +106,22 @@ function IndexController(Params) {
         var text = window.Texts[Language][key];
         text = (text instanceof Array ? text[index] : text);
 
-        console.debug(key, index, text);
+        // console.debug(key, index, text);
 
         t.innerHTML = text;
       });
     }
+
+    return this;
   }
 
-  function InitSlideController() {
+  function InitSlideController() { /* FOLD */
     // Slide elements
     var DOMSlideList = DOMRoot.querySelector('.slide-list');
+    if(!DOMSlideList) { return; }
+
     var DOMSlideIndicatorList = DOMRoot.querySelector('.slide-indicator-list');
+    var DOMGoToSlideList = DOMRoot.querySelectorAll('*[goto-slide]');
 
     // Indicator item template
     var SlideIndicatorItemTemplate = DOMSlideIndicatorList.querySelector('.slide-indicator-item.template');
@@ -112,7 +137,7 @@ function IndexController(Params) {
 
     // Create indicators & slides ids from slides elements
     SlideList.forEach(function(DOMSlideItem, index) {
-      var SlideName = DOMSlideItem.querySelector('slide-name text');
+      var SlideName = DOMSlideItem.querySelector('slide-name');
       var SlideId = (DOMSlideItem.id = (DOMSlideItem.id || ('Slide'+ index.toString().padStart(2, '0'))));
 
       SlideByOffsetTop[window[SlideId].offsetTop] = window[SlideId];
@@ -120,8 +145,8 @@ function IndexController(Params) {
       var Indicator = SlideIndicatorItemTemplate.cloneNode(true);
       var IndicatorTitle = Indicator.querySelector('.title');
 
-      if(SlideName) {
-        IndicatorTitle.appendChild(SlideName);
+      if(SlideName && SlideName.children[0]) {
+        IndicatorTitle.appendChild(SlideName.children[0]);
       } else {
         IndicatorTitle.innerHTML = ('#'+ SlideId);
       }
@@ -182,6 +207,21 @@ function IndexController(Params) {
       IndicatorList.Upd();
     });
 
+
+    DOMGoToSlideList.forEach(function(button) {
+      button.addEventListener('click', function(event) {
+        var SlideId = this.getAttribute('goto-slide');
+        var Slide = window[SlideId];
+
+        if(!Slide) { return; }
+
+        window.scroll({
+          top: Slide.offsetTop,
+          behavior: 'smooth',
+        });
+      });
+    });
+
     // window.addEventListener('wheel', function(event) {
     //   var newTop;
     //   (event.deltaY < 0 || event.deltaY > 0) && (newTop = (window.scrollY + (event.deltaY * 100)));
@@ -191,9 +231,22 @@ function IndexController(Params) {
     //     behavior: 'smooth',
     //   });
     // });
+
+    return this;
   }
 
-  function RunFXShow(Slide) {
+  function InitThreeController() { /* FOLD */
+    if(!window.ThreeController) { return; }
+
+    ThreeController = new window.ThreeController({
+      IndexController: Instance,
+    });
+
+    return this;
+  }
+
+
+  function RunFXShow(Slide) { /* FOLD */
     if(Slide.FXShowComplete) {
       return;
     }
@@ -222,6 +275,8 @@ function IndexController(Params) {
         recursion(item.querySelectorAll('.fx-show'), itemTime);
       });
     })(Slide.querySelectorAll('.fx-show'));
+
+    return this;
   }
 
   // Events ----------------------------------------------------------------- //

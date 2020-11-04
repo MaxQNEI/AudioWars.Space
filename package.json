@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/MaxQNEI/AudioWars.Space/issues"
   },
-  "homepage": "https://github.com/MaxQNEI/AudioWars.Space#readme"
+  "homepage": "https://github.com/MaxQNEI/AudioWars.Space#readme",
+  "dependencies": {
+    "three": "^0.122.0"
+  }
 }

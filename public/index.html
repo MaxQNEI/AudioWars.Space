@@ -15,8 +15,9 @@
 
     <script type="text/javascript" src="/js/prototypes/HTMLElement.class.js"></script>
     <script type="text/javascript" src="/js/prototypes/HTMLElement.remove.js"></script>
+    <script type="text/javascript" src="/js/assets/three/three.js"></script>
     <script type="text/javascript" src="/js/assets/texts.js"></script>
-    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/index.mjs"></script>
 
     <script type="text/javascript">
       'use strict';
@@ -40,51 +41,51 @@
 
   <body>
     <div class="root">
-      <div class="main-background"></div>
+      <div class="three-background"></div>
+      <!-- <div class="main-background"></div> -->
 
-      <div class="language">
+      <!-- <div class="language">
         <button type="button" data-lang="en">English</button>
         <button type="button" data-lang="ru">Русский</button>
-        <!-- <button type="button" data-lang="ua">Українська</button> -->
-      </div>
+      </div> -->
 
-      <div class="slide-list">
+      <!-- <div class="slide-list">
 
         <div id="Intro" class="slide-item">
           <slide-name>
-            <text key="Intro[1]"></text>
+            <text key="Intro"></text>
           </slide-name>
 
           <div class="slide-content text-center fx-show">
             <div class="text-large fx-show" fx-show-up>
               <small>
-                <text key="Welcome[0]"></text>
+                <text key="Welcome"></text>
               </small>
 
               <small class="fx-show" fx-show-up>
-                <text key="Welcome[1]"></text>
+                <text key="to"></text>
               </small>
                 <br>
               <span class="fx-show" fx-show-up="2">
-                <text key="Welcome[2]"></text>
+                <text key="ProjectTitle"></text>
               </span>
             </div>
 
             <div class="text-large mar-top-5 fx-show" fx-show-up>
               <span>
                 <small class="fx-show">
-                  <text key="ProjectAndPortfolio[0]"></text>
+                  <text key="Project"></text>
                 </small>
 
                 <small class="fx-show" fx-show-up>&</small>
 
                 <small class="fx-show" fx-show-up>
-                  <text key="ProjectAndPortfolio[1]"></text>
+                  <text key="Portfolio"></text>
                 </small>
                   <br>
                 <span class="fx-show" fx-show-up="2">
                   <button type="button" goto-slide="About">
-                    <text key="ProjectAndPortfolio[2]"></text>
+                    <text key="AuthorNickname"></text>
                   </button>
                 </span>
               </span>
@@ -94,44 +95,110 @@
 
         <div id="About" class="slide-item">
           <slide-name>
-            <text key="About[1]"></text>
+            <text key="About"></text>
           </slide-name>
 
           <div class="slide-content">
             <div class="text-large fx-show">
-              <text key="About[1]"></text>
+              <span class="fx-show" fx-show-up>
+                <text key="About"></text>
+              </span>
+            </div>
+
+            <div class="fx-show">
+              <span class="fx-show" fx-show-up>
+                <span class="fx-show" fx-show-up>
+                  <text key="My">My</text>
+                </span>
+
+                <span class="fx-show" fx-show-up>
+                  <text key="name">name</text>
+                </span>
+
+                <span class="fx-show" fx-show-up>
+                  <text key="is">is</text>
+                </span>
+
+                <span class="fx-show" fx-show-up>
+                  <text key="Maxim">Maxim</text>
+                </span>
+
+                <span class="fx-show" fx-show-up>
+                  <text key="Radul">Radul</text>.
+                </span>
+              </span>
             </div>
           </div>
         </div>
 
         <div class="slide-item">
+          <slide-name>
+            <span>
+              <text key="Hobby"></text> & <text key="Interests"></text>
+            </span>
+          </slide-name>
+
           <div class="slide-content">
             <div class="text-large fx-show">
-              CurrentProjects: {}
+              <span class="fx-show" fx-show-up>
+                <text key="Hobby"></text>
+              </span>
+
+              <span class="fx-show" fx-show-up>&</span>
+
+              <span class="fx-show" fx-show-up>
+                <text key="Interests"></text>
+              </span>
             </div>
           </div>
         </div>
 
         <div class="slide-item">
+          <slide-name>
+            <span>
+              <text key="Plans"></text> & <text key="Objectives"></text>
+            </span>
+          </slide-name>
+
           <div class="slide-content">
-            <div class="site-title">Slide 4</div>
+            <div class="text-large fx-show">
+              <span class="fx-show" fx-show-up>
+                <text key="Plans"></text>
+              </span>
+
+              <span class="fx-show" fx-show-up>&</span>
+
+              <span class="fx-show" fx-show-up>
+                <text key="Objectives"></text>
+              </span>
+            </div>
           </div>
         </div>
 
         <div class="slide-item">
+          <slide-name>
+            <text key="Projects"></text>
+          </slide-name>
+
           <div class="slide-content">
-            <div class="site-title">Slide 5</div>
+            <div class="text-large fx-show">
+              <span class="fx-show" fx-show-up>
+                <text key="Projects"></text>
+              </span>
+            </div>
           </div>
         </div>
 
-      </div>
+      </div> -->
 
-      <div class="slide-indicator-list">
-        <div class="slide-indicator-item template">
-          <div class="title"></div>
-          <div class="point"></div>
+      <!-- <div class="slide-indicator-wrap">
+        <div class="slide-indicator-list">
+          <div class="slide-indicator-item template">
+            <div class="title"></div>
+            <div class="point"></div>
+          </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

@@ -14,7 +14,6 @@ html {
 
 
 
-
 body {
   opacity: 0;
   overflow-x: hidden;
@@ -42,27 +41,6 @@ body {
 
 
 
-.root {
-  min-height: 100vh;
-}
-
-.main-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  width: 100vw;
-  height: 100vh;
-
-  background-image: url('/img/audiowars-white.svg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 20% 20%;
-  opacity: .1;
-}
-
-
 button[goto-slide] {
   position: relative;
 
@@ -77,8 +55,15 @@ button[goto-slide] {
 
   transition: all 100ms ease;
 }
+
 button[goto-slide]:hover {
   text-decoration-color: transparent;
+}
+
+
+/* Root --------------------------------------------------------------------- */
+.root {
+  min-height: 100vh;
 }
 
 
@@ -89,6 +74,45 @@ button[goto-slide]:hover {
 }
 .fx-show.fx-show-active {
   opacity: 1;
+}
+.fx-show.fx-500ms, .fx-show.fx-500ms .fx-show {
+  transition-duration: 500ms;
+}
+.fx-show.fx-500ms, .fx-show.fx-2000ms .fx-show {
+  transition-duration: 2000ms;
+}
+
+
+/* MainBackground ----------------------------------------------------------- */
+.main-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('/img/audiowars-white.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20% 20%;
+  opacity: .1;
+}
+
+
+/* ThreeBackground ---------------------------------------------------------- */
+.three-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.three-background canvas {
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -103,7 +127,7 @@ button[goto-slide]:hover {
   position: fixed;
   top: 10px;
   right: 10px;
-  z-index: 1;
+  z-index: 210;
 }
 
 .language button {
@@ -142,6 +166,8 @@ button[goto-slide]:hover {
 
 /* Slide -------------------------------------------------------------------- */
 .slide-list {
+  position: relative;
+  z-index: 100;
 }
 
 .slide-item {
@@ -158,9 +184,28 @@ slide-name {
 }
 
 .slide-content {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+
+/* SlideIndicator ----------------------------------------------------------- */
+.slide-indicator-wrap {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  right: 32px;
+  bottom: 0;
+  z-index: 200;
+
+  width: 48px;
+}
 
 .slide-indicator-list, .slide-indicator-list * {
   transition: all 200ms ease;
@@ -173,12 +218,7 @@ slide-name {
   align-items: center;
   grid-gap: 1px;
 
-  position: fixed;
-  top: 0;
-  right: 32px;
-  bottom: 0;
-
-  width: 48px;
+  width: 100%;
 
   /*opacity: .75;*/
 }
