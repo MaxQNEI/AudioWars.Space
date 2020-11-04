@@ -1,15 +1,9 @@
-# 🚀 Welcome to your new awesome project!
+# AudioWars.Space
 
-This project has been created using **webpack scaffold**, you can now run
+## 2020/11/01
 
-```
-npm run build
-```
+About: It's project present my "Project & Portfolio".
 
-or
+I will to use maximum of my skill + learn new technologies.
 
-```
-yarn build
-```
-
-to bundle your application
+I Frontend-developer++ (and Fullstack-developer, but is not main)
