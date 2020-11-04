@@ -1,8 +1,16 @@
-// import './index.scss';
+import './index.scss';
 
 class Root {
+  static DOM;
+
   constructor() {
-    console.debug('Root.constructor()', document.body);
+    this.InitDOMElement();
+  }
+
+  InitDOMElement() {
+    Root.DOM = document.createElement('div');
+    Root.DOM.classList.add('root');
+    document.body.appendChild(Root.DOM);
   }
 }
 
