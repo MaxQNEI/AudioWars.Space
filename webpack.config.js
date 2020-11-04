@@ -48,7 +48,7 @@ module.exports = {
       include: [path.resolve(__dirname, 'src')],
       loader: 'babel-loader'
     }, {
-      test: /.(scss|css)$/,
+      test: /.(s[ac]ss|css)$/,
 
       use: [{
         loader: "style-loader"
