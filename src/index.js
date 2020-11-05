@@ -1,16 +1,13 @@
-import './index.sass';
+import './index.styl';
+import PugIndex from './index.pug';
 
 class Root {
   static DOM;
 
   constructor() {
-    this.InitDOMElement();
-  }
-
-  InitDOMElement() {
-    Root.DOM = document.createElement('div');
-    Root.DOM.classList.add('root');
-    document.body.appendChild(Root.DOM);
+    document.body.innerHTML = PugIndex.call(this, {
+      HW: 'Hello World!',
+    });
   }
 }
 

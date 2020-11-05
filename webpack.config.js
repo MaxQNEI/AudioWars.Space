@@ -10,7 +10,7 @@ const webpack = require('webpack');
  * should be splitted of chunk by heuristics using module duplication count and
  * module category (i. e. node_modules). And splits the chunks…
  *
- * It is safe to remove "splitChunks" from the generated configuration
+ * It is safe to remove 'splitChunks' from the generated configuration
  * and was added as an educational example.
  *
  * https://webpack.js.org/plugins/split-chunks-plugin/
@@ -35,7 +35,7 @@ module.exports = {
   plugins: [new webpack.ProgressPlugin()],
 
   entry: {
-    main: './src/index.js'
+    main: './src/index.js',
   },
   output: {
     filename: 'index.js',
@@ -48,21 +48,39 @@ module.exports = {
       include: [path.resolve(__dirname, 'src')],
       loader: 'babel-loader'
     }, {
-      test: /.(s[ac]ss|css)$/,
+      test: /\.(s[ac]ss|styl|css)$/,
 
       use: [{
-        loader: "style-loader"
+        loader: 'style-loader'
       }, {
-        loader: "css-loader",
+        loader: 'css-loader',
 
         options: {
           sourceMap: true
         }
       }, {
-        loader: "sass-loader",
+        loader: 'sass-loader',
 
         options: {
           sourceMap: true
+        }
+      }, {
+        loader: 'stylus-loader',
+
+        options: {
+          sourceMap: true
+        }
+      }]
+    }, {
+      test: /\.pug$/,
+      loader: 'pug-loader'
+    }, {
+      test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
+      use: [{
+        loader: 'file-loader',
+
+        options: {
+          outputPath: 'assets',
         }
       }]
     }]
