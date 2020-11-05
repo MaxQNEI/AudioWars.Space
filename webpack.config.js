@@ -102,5 +102,11 @@ module.exports = {
       minSize: 30000,
       name: false
     }
-  }
+  },
+
+  plugins: [
+    // new webpack.DefinePlugin({
+    //   // ...
+    // })
+  ],
 }

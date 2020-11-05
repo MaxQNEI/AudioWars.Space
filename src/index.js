@@ -1,14 +1,7 @@
-import './index.styl';
-import PugIndex from './index.pug';
+import './styles/index.styl';
+import './assets/HTML2DOM.js';
+import ModuleRoot from './modules/Root.js';
 
-class Root {
-  static DOM;
-
-  constructor() {
-    document.body.innerHTML = PugIndex.call(this, {
-      HW: 'Hello World!',
-    });
-  }
-}
-
-window.addEventListener('load', () => new Root);
+window.addEventListener('load', () => {
+  new ModuleRoot({ ParentElement: document.body });
+});
