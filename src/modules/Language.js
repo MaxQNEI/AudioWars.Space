@@ -1,18 +1,19 @@
 import '../styles/language.styl';
 import PugLanguage from '../views/language.pug';
 
+import ModuleRoot from './Root.js';
 import Texts from '../assets/Texts.js';
 
 export default class ModuleLanguage {
-  static LanguageElement;
+  LanguageElement;
 
-  static Language = 'en';
-  static LanguageList = Object.keys(Texts);
+  Language = 'en';
+  LanguageList = Object.keys(Texts);
 
-  static ButtonByLanguage = {};
+  ButtonByLanguage = {};
 
   constructor({ ParentElement }) {
-    ModuleLanguage.LanguageElement = HTML2DOM(PugLanguage.call(this, {
+    this.LanguageElement = HTML2DOM(PugLanguage.call(this, {
       // Variables
     }), ParentElement)[0];
 
@@ -20,34 +21,39 @@ export default class ModuleLanguage {
     this.Detect();
     this.AddListeners();
     this.UpdateTexts();
+
+    setTimeout(() => {
+      this.UpdateTexts();
+    }, 2000);
   }
 
   Detect() {
     // // Detect
-    var Found = (ModuleLanguage.LanguageList.includes(window.localStorage.Language) ? window.localStorage.Language : null);
+    var Found = (this.LanguageList.includes(window.localStorage.Language) ? window.localStorage.Language : null);
     !Found && window.navigator.languages.every(function(lang) {
       lang = lang.toLowerCase();
-      ModuleLanguage.LanguageList.includes(lang) && (Found = lang);
+      this.LanguageList.includes(lang) && (Found = lang);
       return !Found;
     });
 
-    ModuleLanguage.Language = (Found || ModuleLanguage.Language);
+    this.Language = (Found || this.Language);
   }
 
   AddListeners() {
-    const ButtonList = ModuleLanguage.LanguageElement.querySelectorAll('button');
+    const ButtonList = this.LanguageElement.querySelectorAll('button');
+
     ButtonList.forEach((button) => {
-      ModuleLanguage.ButtonByLanguage[button.dataset.lang] = button;
+      this.ButtonByLanguage[button.dataset.lang] = button;
 
       button.addEventListener('click', (event) => {
-        if(ModuleLanguage.Language === event.target.dataset.lang) {
+        if(this.Language === event.target.dataset.lang) {
           return;
         }
 
         event.preventDefault();
 
         window.localStorage.Language
-          = ModuleLanguage.Language
+          = this.Language
           = event.target.dataset.lang
         ;
 
@@ -57,15 +63,15 @@ export default class ModuleLanguage {
   }
 
   UpdateTexts() {
-    const current = ModuleLanguage.LanguageElement.querySelector('button.current');
+    const current = this.LanguageElement.querySelector('button.current');
     current && current.classList.remove('current');
-    ModuleLanguage.ButtonByLanguage[ModuleLanguage.Language].classList.add('current');
+    this.ButtonByLanguage[this.Language].classList.add('current');
 
-    const TextElementList = ModuleLanguage.LanguageElement.querySelectorAll('text[key]');
+    const TextElementList = ModuleRoot.RootElement.querySelectorAll('text[key]');
 
-    TextElementList.forEach(function(TextElement) {
+    TextElementList.forEach((TextElement) => {
       var key = TextElement.getAttribute('key');
-      var text = Texts[ModuleLanguage.Language][key];
+      var text = Texts[this.Language][key];
 
       TextElement.innerHTML = text;
     });
