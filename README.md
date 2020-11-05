@@ -9,13 +9,16 @@ I will to use maximum of my skill + learn new technologies.
 I Frontend-developer++ (and Fullstack-developer, but is not main)
 
 
-# Run
+# Install
 
 1. npm i
-2. npm run build
-3. cd public/
-4. ln -s ../dist/index.js .
-5. ln -s ../dist/assets/ .
+2. cd public/
+3. ln -s ../dist/index.js .
+4. ln -s ../dist/assets/ .
+5. npm run build
+
+* OR Oneline: `npm i; cd public/; ln -sf ../dist/index.js .; ln -sf ../dist/assets/ .; npm run build`
+* OR Bash script: `./install.sh`
 
 
 # Lang

@@ -3,5 +3,6 @@
 /package-lock.json
 
 # Webpack
+/dist/index.js
 /dist/assets
 /public/assets
