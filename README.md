@@ -17,7 +17,7 @@ I Frontend-developer++ (and Fullstack-developer, but is not main)
 4. ln -s ../dist/assets/ .
 5. npm run build
 
-* OR Oneline: `npm i; cd public/; ln -sf ../dist/index.js .; ln -sf ../dist/assets/ .; npm run build`
+* OR Singleline: `npm i; cd public/; ln -sf ../dist/index.js .; ln -sf ../dist/assets/ .; npm run build`
 * OR Bash script: `./install.sh`
 
 
