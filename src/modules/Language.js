@@ -28,9 +28,9 @@ export default class ModuleLanguage {
   }
 
   Detect() {
-    // // Detect
+    // Detect
     var Found = (this.LanguageList.includes(window.localStorage.Language) ? window.localStorage.Language : null);
-    !Found && window.navigator.languages.every(function(lang) {
+    !Found && window.navigator.languages.every((lang) => {
       lang = lang.toLowerCase();
       this.LanguageList.includes(lang) && (Found = lang);
       return !Found;
