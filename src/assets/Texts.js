@@ -32,6 +32,7 @@ const Texts = {
     Intro: 'Вступление',
     About: 'Обо Мне',
     Welcome: 'Добро пожаловать',
+    to: 'на',
     Project: 'Проект',
     Portfolio: 'Портфолио',
     Hobby: 'Хобби',
