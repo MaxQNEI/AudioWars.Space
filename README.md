@@ -11,13 +11,17 @@ I Frontend-developer++ (and Fullstack-developer, but is not main)
 
 # Install
 
-1. npm i
-2. cd public/
-3. ln -s ../dist/index.js .
-4. ln -s ../dist/assets/ .
-5. npm run build
+1. npm i;
+2. cd public/;
+3. ln -sf ../dist/index.js .;
+4. ln -sf ../dist/assets/ .;
+5. cd ../src/assets;
+6. ln -sf ../../node_modules/three/examples/jsm/loaders/ ThreeLoaders;
+7. cd ..;
+8. npm run build;
 
-* OR Singleline: `npm i; cd public/; ln -sf ../dist/index.js .; ln -sf ../dist/assets/ .; npm run build`
+
+* OR Singleline: `npm i; cd public/; ln -sf ../dist/index.js .; ln -sf ../dist/assets/ .; cd ../src/assets; ln -sf ../../node_modules/three/examples/jsm/loaders/ ThreeLoaders; cd ..; npm run build;`
 * OR Bash script: `./install.sh`
 
 
