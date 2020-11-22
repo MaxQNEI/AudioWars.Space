@@ -6,5 +6,5 @@ ln -sf ../dist/index.js .;
 ln -sf ../dist/assets/ .;
 cd ../src/assets;
 ln -sf ../../node_modules/three/examples/jsm/loaders/ ThreeLoaders;
-cd ..;
+cd ../../;
 npm run build;

@@ -17,11 +17,10 @@ I Frontend-developer++ (and Fullstack-developer, but is not main)
 4. ln -sf ../dist/assets/ .;
 5. cd ../src/assets;
 6. ln -sf ../../node_modules/three/examples/jsm/loaders/ ThreeLoaders;
-7. cd ..;
+7. cd ../../;
 8. npm run build;
 
-
-* OR Singleline: `npm i; cd public/; ln -sf ../dist/index.js .; ln -sf ../dist/assets/ .; cd ../src/assets; ln -sf ../../node_modules/three/examples/jsm/loaders/ ThreeLoaders; cd ..; npm run build;`
+* OR Singleline: `npm i; cd public/; ln -sf ../dist/index.js .; ln -sf ../dist/assets/ .; cd ../src/assets; ln -sf ../../node_modules/three/examples/jsm/loaders/ ThreeLoaders; cd ../../; npm run build`
 * OR Bash script: `./install.sh`
 
 
