@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const { exec } = require('child_process');
 
 
 
@@ -107,6 +108,12 @@ module.exports = {
   plugins: [
     // new webpack.DefinePlugin({
     //   // ...
-    // })
+    // }),
+    new webpack.ProgressPlugin((percentage, message, ...args) => {
+      // e.g. Output each progress message directly to the console:
+      // console.info(percentage, message, ...args);
+
+      (percentage >= 1) && exec('notify-send -t 2000 "Compiled!" -a "Webpack"');
+    }),
   ],
 }
