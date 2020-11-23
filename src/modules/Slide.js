@@ -158,7 +158,7 @@ export default class ModuleSlide {
       parentTime = (parentTime || 0);
 
       ItemList.forEach(function(item) {
-        parentTime += (item.hasAttribute('fx-show-up') ? (250 * parseInt(item.getAttribute('fx-show-up') || 1)) : 0);
+        parentTime += (item.hasAttribute('fx-show-up') ? (100 * parseInt(item.getAttribute('fx-show-up') || 1)) : 0);
 
         var itemTime = (parentTime + parseInt(item.getAttribute('fx-show') || 0));
 
