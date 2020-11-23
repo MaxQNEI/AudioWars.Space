@@ -20,12 +20,15 @@ export default class ModuleBackground {
   }
 
   Init() {
-    this.Renderer = new THREE.WebGLRenderer({ antialias: false });
+    this.Renderer = new THREE.WebGLRenderer({ antialias: true });
     this.BackgroundElement.appendChild(this.Renderer.domElement);
 
     this.Renderer.outputEncoding = THREE.sRGBEncoding;
     this.Renderer.setSize(this.Width(), this.Height());
     this.Renderer.setClearColor(0, 1);
+    this.Renderer.shadowMap.enabled = true;
+    this.Renderer.shadowMap.type = THREE.PCFSoftShadowMap; // default THREE.PCFShadowMap
+
 
     window.addEventListener('resize', () => {
       this.Renderer.setSize(this.Width(), this.Height());
@@ -54,9 +57,10 @@ export default class ModuleBackground {
 
   Scenario() {
     const Scene = this.Scene = new THREE.Scene();
-    const Camera = this.Camera = new THREE.PerspectiveCamera(45, this.Aspect(), 1, 10000);
+    const Camera = this.Camera = new THREE.PerspectiveCamera(45, this.Aspect(), 1, 100000);
+    const ZeroPosition = new THREE.Vector3(0, 0, 0);
 
-    Scene.fog = new THREE.Fog(0);
+    Scene.fog = new THREE.Fog(0, 0.1, 5000);
     Scene.Animations = [];
 
     window.addEventListener('resize', () => {
@@ -64,21 +68,83 @@ export default class ModuleBackground {
       Camera.updateProjectionMatrix();
     });
 
+    // Light
+    // const ALight = new THREE.AmbientLight(null, .1);
+    // Scene.add(ALight);
 
+
+    // Lights
+    // const LightDistance = 100;
+    // const LightIntensity = 500;
+
+    // const LightBack = new THREE.RectAreaLight('#4fc3f7', LightIntensity);
+    // LightBack.position.set(LightDistance, 0, -LightDistance);
+    // LightBack.lookAt(ZeroPosition);
+    // Scene.add(LightBack);
+
+    // const LightFill = new THREE.RectAreaLight('#ef5350', LightIntensity);
+    // LightFill.position.set(-LightDistance, 0, LightDistance);
+    // LightFill.lookAt(ZeroPosition);
+    // Scene.add(LightFill);
+
+    // const LightKey = new THREE.RectAreaLight('#ffffff', LightIntensity);
+    // LightKey.position.set(LightDistance, 0, LightDistance);
+    // LightKey.lookAt(ZeroPosition);
+    // Scene.add(LightKey);
+
+
+
+    // ModelAudioWarsLogotype
     this.GLTFLoader.load('/res/glb/ModelAudioWarsLogo.glb', (gltf) => {
-      const MeshAudioWarsLogo = gltf.scene.children[0];
-      MeshAudioWarsLogo.material = new THREE.MeshBasicMaterial({ color: '#111111' });
+      const MeshLogotype = gltf.scene.children[0];
+      MeshLogotype.material = new THREE.MeshStandardMaterial({
+        color: '#666666',
+        roughness: .1,
+        metalness: 0,
+      });
+      MeshLogotype.castShadow = true;
+      MeshLogotype.position.z = ((MeshLogotype.position.z - MeshLogotype.geometry.boundingBox.min.z));
+      Scene.add(MeshLogotype);
 
-      Scene.add(MeshAudioWarsLogo);
-    });
+      // CamDistance++
+      const LogotypeDistance = ((-MeshLogotype.geometry.boundingBox.min.x + MeshLogotype.geometry.boundingBox.max.x) * 2);
+
+      // Light
+      // const SpotLight = new THREE.SpotLight('#fdb813', 1, null, (Math.PI / 8));
+      const SpotLight = new THREE.SpotLight('#999999', 1, null, (Math.PI / 8));
+
+      SpotLight.castShadow = true;
+      SpotLight.shadow.mapSize.width = 2048;
+      SpotLight.shadow.mapSize.height = 2048;
+
+      SpotLight.shadow.camera.near = 0.1;
+      SpotLight.shadow.camera.far = 100000;
+      SpotLight.shadow.camera.fov = 30;
+
+      SpotLight.position.set(0, 0, LogotypeDistance);
+      SpotLight.lookAt(ZeroPosition);
+      Scene.add(SpotLight);
 
 
-    const ZeroPosition = new THREE.Vector3(0, 0, 0)
-    const Distance = 50;
-    Scene.Animations.push((timestamp) => {
-      Camera.position.set(Distance, 0, Distance);
-      Camera.position.x = (Math.sin(timestamp / 10000) * Distance);
-      Camera.lookAt(ZeroPosition);
+      // Ground
+      const MeshGround = new THREE.Mesh(
+        new THREE.PlaneBufferGeometry(100, 100, 1, 1),
+        new THREE.MeshStandardMaterial({
+          color: '#444444',
+          roughness: .1,
+          metalness: 0,
+        })
+      );
+      MeshGround.receiveShadow = true;
+      Scene.add(MeshGround);
+
+      // // Camera
+      Scene.Animations.push((timestamp) => {
+        Camera.position.set(LogotypeDistance, 0, LogotypeDistance);
+        Camera.position.y = (Math.sin(timestamp / 20000) * (LogotypeDistance / 8));
+        Camera.position.x = (Math.sin(timestamp / 7500) * (LogotypeDistance / 2));
+        Camera.lookAt(MeshLogotype.position);
+      });
     });
   }
 
